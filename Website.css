@@ -1,0 +1,374 @@
+
+*{
+    margin:0px;
+    padding:0px;
+}
+
+
+body{
+    display:flexbox;
+    background-color:honeydew;
+    color:darkslategray;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size:16px;
+    line-height:1.6em;
+    margin:0px;
+}
+
+header{
+    margin:0px;
+}
+#move{
+    /*background-image:url('images.jpg');*/
+    background-color:black;
+    color:rgb(0, 247, 255);
+    margin-top:10px;
+    height:40px;
+}
+
+
+.container{
+    width:80%;
+    margin : auto;
+    overflow:hidden;
+    padding-bottom:20px;
+}
+
+
+#main-header{
+    background-image:url('a5.jpg');
+    padding:0px;
+    margin:0px;
+    color:white;
+    display:flex;
+}
+
+#main-header img{
+    background-color:honeydew;
+}
+nav{
+    margin:0px;
+}
+
+nav ul{
+    display: flex;
+    list-style: none;
+    color: black;
+    justify-content: space-around;
+    justify-self: center;
+    background-color: rgb(0, 225, 255);
+    text-align: center;
+    align-items: center;
+    padding:10px;
+}
+nav ul li{
+    padding: 10px;
+    height: 30px;
+   
+}
+nav ul li a{
+    color:black;
+    text-decoration:none ;
+
+}
+
+.nav-sub{
+    position: absolute;
+    z-index: 10;
+}
+
+.nav-sub ul{
+    display: none;
+}
+.nav-sub ul a{
+    color:white;
+}
+nav :hover{
+    color:white;
+}
+.nav-sub a:hover{
+    color:yellow;
+}
+
+nav ul li:hover{
+    background-color: blue;
+}
+
+
+nav ul li:hover .nav-sub ul{
+    display: block;
+    background:blue;
+    padding:10px;
+    margin-left:10px;
+}
+nav ul li:hover .nav-sub ul li{
+    border-bottom:2px solid rgb(2, 2, 92);
+    background:transparent;
+    border-radius:0;
+   margin-left:30px;
+}
+
+
+.college-img{
+    display: flex;
+    justify-content: center;
+}
+
+
+
+.college-img img{
+    margin-top: -5px;
+    height: 300px;
+    width: 700px;
+    transition: ease-in 1s;
+}
+#leftbtn{
+   position: absolute;
+  margin-left:-50%;
+   margin-top: 150px;
+   padding: 20px;
+   border-radius: 10px;
+   border-style: none;
+   font-size: 20px;
+   background-color:rgb(0, 247, 255);
+   opacity: 1;
+}
+#rightbtn{
+    position: absolute;
+   margin-right:-50%;
+    margin-top: 150px;
+    padding: 20px;
+    border-radius: 10px;
+    border-style: none;
+    font-size: 20px;
+    background-color:rgb(0, 247, 255);
+    opacity: 1;
+}
+
+#leftbtn:hover{
+    opacity: 1;
+    background-color: dodgerblue;
+}
+#rightbtn:hover{
+    opacity: 1;
+    background-color: dodgerblue;
+}
+/* ------- */
+.offer{
+    margin-top:200px;
+    width:100%;
+    color:darkslategray;
+
+}
+.offer:hover{
+    transform:scale(1.3);
+    box-shadow: 5px 5px 10px 10px grey;
+    background-color:lavender;
+}
+.course-container{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top:100px;
+    height:30rem;
+}
+
+.card{
+    width: 200px;
+    height: 400px;
+    border-radius: 20px;
+    background-color: rgb(253, 246, 246);
+    transition: 0.5s ease-in-out;
+}
+
+.card:hover{
+    transform: scale(1.3);
+    box-shadow: 5px 5px 10px 10px grey;
+}
+
+.card .image{
+    width: 200px;
+    height: 200px;
+    background-size: cover;
+}
+
+.card .course-name{
+    text-align: center;
+    font-weight: bold;
+}
+#imgeng{
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    background-image: url('./pics/engineering.jpg');
+    background-size: cover;
+}
+
+#imgmang{
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    background-image: url('./pics/management.jpg');
+    background-size: cover;
+}
+
+#imgsci{
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    background-image: url('./pics/science.jpeg');
+    background-size: cover;
+}
+
+#right h3{
+    text-align:center;
+    background-image:url('a4.jpg');
+    color:rgb(0, 247, 255);
+    padding:10px;
+    margin-top:0px;
+}
+#right {
+    float:right;
+    border:5px solid darkgrey;
+    background-color:white;
+   
+    height:100%;
+    width:35%;
+    padding:0px;
+    margin-top:0px;
+}
+
+#right a{
+    text-decoration:none;
+    color:black;
+
+}
+#right a:hover{
+    color:blue;
+}
+#center h3{
+    text-align:center;
+    background-image:url('images.jpg');
+    color:rgb(0, 247, 255);
+    padding:10px;
+    margin-top:0px;
+}
+.btn{
+    border:1px solid #3498db;
+    background:none;
+    padding:10px,20px;
+    font-size:18px;
+    font-family:"montserrat";
+    cursor:pointer;
+    margin:10px;
+    position:right;
+    font-weight:bold;
+}
+.btn1{
+    color:#3498db
+}
+.btn1:hover{
+    color:#fff;
+}
+#center{
+    float:center;
+    border:5px solid darkgrey;
+    background-color:white;
+    height:200px;
+    padding:0px;
+    margin-top:10px;
+    margin-left:410px;
+    margin-right:50px;
+    width:400px;
+    
+}
+#center a{
+    text-decoration:none;
+    color:black;
+}
+#center a:hover{
+    color:rgb(10, 247, 10);
+}
+ .footer {
+     margin-top:100px;
+    background-color:black;
+    color:white;
+  
+    position:relative;
+    margin-bottom:0px;
+    width:100%;
+    overflow:visible;
+    
+    
+}
+.footer div{
+    margin-left:10px;
+    width:100%;
+
+}
+
+.footer img{
+    height:100px;
+}
+
+.footer a {
+    text-decoration : none;
+    color:white;
+}
+.footer a:hover{
+    color:rgb(255, 255, 0);
+}
+#left{
+    float:left;
+    border: 5px solid darkgrey;
+    background-color:white;
+    margin-top:0px;
+    padding:0px;
+}
+#left a{
+    text-decoration:none;
+    color:black;
+    padding:10px;
+    margin:10px;
+}
+#left a:hover{
+    color:rgb(10, 248, 10);
+}
+#left h3{
+    background-image:url('stars.png');
+    color:rgb(0, 247, 255);
+    margin-top:0px;
+    margin-bottom:0px;
+    text-align:center;
+    padding:10px;
+}
+.campus-t{
+    font-weight:bold;
+    font-size:20px;
+}
+.campus-t:hover{
+    transform:scale(1.3);
+}
+video{
+    width: 80%;
+    height: auto;
+    margin-left: 130px;
+    border-radius: 70px;
+    transition: 0.5s;
+    margin-top:40px;
+}
+video:hover{
+    transform: scale(1.1);
+    box-shadow: 5px 5px 5px 5px black;
+}
+
+.copyright{
+    color:yellow;
+    margin-top:0px;
+    display:block;
+}
+.copyright hr{
+    margin:0px;
+    width:100%;
+}
+.copyright p{
+    margin-top:0px;
+    text-align:center;
+}
+
